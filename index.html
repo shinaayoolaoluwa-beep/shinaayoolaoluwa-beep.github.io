@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Olaoluwa Shinaayo — Mechatronics Engineering student exploring CAD, Python, robotics and AI." />
+  <title>Olaoluwa Shinaayo | Mechatronics Engineering Portfolio</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2d;--muted:#a8b3c7;--text:#f4f7fb;--accent:#70e1c1;--accent2:#7aa7ff;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 85% 5%,#1b3151 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,90%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{font-weight:800;letter-spacing:.4px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center;padding:92px 0 105px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.75rem}.hero h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.03;letter-spacing:-3px;margin:17px 0}.hero h1 span{color:var(--accent)}.lead{color:var(--muted);font-size:1.12rem;max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border-radius:9px;font-weight:750;border:1px solid var(--line);display:inline-block}.primary{background:var(--accent);color:#07151a;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}.orb{aspect-ratio:1;border-radius:30px;background:linear-gradient(145deg,rgba(112,225,193,.17),rgba(122,167,255,.1));border:1px solid var(--line);display:grid;place-items:center;position:relative;overflow:hidden}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(112,225,193,.35);border-radius:50%;width:75%;aspect-ratio:1}.orb:after{width:48%;border-color:rgba(122,167,255,.5)}.orb strong{font-size:5rem;color:var(--accent);z-index:1;letter-spacing:-7px}.orb small{position:absolute;bottom:22px;color:var(--muted);letter-spacing:2px;font-size:.65rem}
+    section{padding:72px 0;border-top:1px solid var(--line)}.section-tag{color:var(--accent);font-size:.75rem;text-transform:uppercase;letter-spacing:2px;font-weight:800}.section-title{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.5px;margin:8px 0 28px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}.about-grid p{color:var(--muted);margin-top:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact,.card,.skill{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:19px}.fact b{display:block;color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:1px}.fact span{display:block;margin-top:5px}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill h3{margin:0 0 7px}.skill p{color:var(--muted);margin:0;font-size:.92rem}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.card{padding:24px}.card .number{color:var(--accent);font-weight:800;font-size:.8rem}.card h3{font-size:1.25rem;margin:8px 0}.card p{color:var(--muted);margin:0 0 15px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{font-size:.75rem;color:#c9d7ea;border:1px solid var(--line);padding:4px 9px;border-radius:99px}
+    .learning{display:grid;grid-template-columns:1fr 1fr;gap:18px}.learning .card{height:100%}.learning ul{color:var(--muted);padding-left:20px;margin-bottom:0}.contact{background:linear-gradient(120deg,rgba(112,225,193,.1),rgba(122,167,255,.08));border:1px solid var(--line);padding:32px;border-radius:18px}.contact p{color:var(--muted)}.contact-links{display:flex;gap:12px;flex-wrap:wrap}.contact-links a{border-bottom:1px solid var(--accent);color:var(--accent)}footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.navlinks{gap:12px;font-size:.8rem}.hero{grid-template-columns:1fr;padding:65px 0 75px;gap:32px}.orb{max-width:270px}.about-grid,.learning{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.projects{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}}
+    @media(max-width:430px){.navlinks a:nth-child(2){display:none}.skills{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.section-title{margin-bottom:20px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home">OS<span>.</span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">Mechatronics Engineering Student</div>
+        <h1>Olaoluwa<br/><span>Shinaayo.</span></h1>
+        <p class="lead">I’m an aspiring mechatronics engineer interested in building practical solutions at the intersection of mechanical design, electronics, programming, robotics and artificial intelligence.</p>
+        <div class="actions"><a class="btn primary" href="#projects">Explore my work</a><a class="btn" href="#contact">Get in touch</a></div>
+      </div>
+      <div class="orb" aria-label="OS monogram graphic"><strong>OS</strong><small>DESIGN · BUILD · LEARN</small></div>
+    </div>
+
+    <section id="about"><div class="wrap">
+      <div class="section-tag">01 / About me</div><h2 class="section-title">Curious by nature. Practical by design.</h2>
+      <div class="about-grid">
+        <p>I am studying Mechatronics Engineering at the <strong>Federal University Oye-Ekiti</strong>. I enjoy learning how engineering systems work, then applying that knowledge through design, coding and hands-on experiments. I’m currently strengthening my skills in Python, computer-aided design, artificial intelligence and machine learning.</p>
+        <div class="facts"><div class="fact"><b>Education</b><span>Federal University Oye-Ekiti</span></div><div class="fact"><b>Discipline</b><span>Mechatronics Engineering</span></div><div class="fact"><b>Tools</b><span>AutoCAD · Python</span></div><div class="fact"><b>Interests</b><span>Robotics · AI · Automation</span></div></div>
+      </div>
+    </div></section>
+
+    <section id="skills"><div class="wrap">
+      <div class="section-tag">02 / Skills & tools</div><h2 class="section-title">What I’m building skills in</h2>
+      <div class="skills">
+        <article class="skill"><h3>AutoCAD</h3><p>Computer-aided design and technical drawing for engineering applications.</p></article>
+        <article class="skill"><h3>Python</h3><p>Programming fundamentals, problem-solving and a foundation for intelligent systems.</p></article>
+        <article class="skill"><h3>Arduino & electronics</h3><p>Microcontroller interfacing, basic circuits, components and practical experiments.</p></article>
+        <article class="skill"><h3>Mechatronics</h3><p>Exploring the integration of mechanical, electronic and control systems.</p></article>
+        <article class="skill"><h3>Artificial intelligence</h3><p>Learning AI and machine-learning concepts and how they can solve real problems.</p></article>
+        <article class="skill"><h3>Robotics & automation</h3><p>Developing knowledge of robotic systems, automation and system design.</p></article>
+      </div>
+    </div></section>
+
+    <section id="projects"><div class="wrap">
+      <div class="section-tag">03 / Projects & practical work</div><h2 class="section-title">Learning through making</h2>
+      <div class="projects">
+        <article class="card"><div class="number">PROJECT 01</div><h3>Arduino Relay Interfacing</h3><p>A practical exercise interfacing a 5V relay module with an Arduino UNO, using a digital output to switch the relay on and off.</p><div class="chips"><span class="chip">Arduino UNO</span><span class="chip">5V Relay</span><span class="chip">Electronics</span></div></article>
+        <article class="card"><div class="number">SKILL DEVELOPMENT</div><h3>CAD & Technical Design</h3><p>Building computer-aided design skills with AutoCAD and applying engineering drawing principles to design tasks.</p><div class="chips"><span class="chip">AutoCAD</span><span class="chip">CAD</span><span class="chip">Design</span></div></article>
+        <article class="card"><div class="number">ONGOING LEARNING</div><h3>Python Programming</h3><p>Practising programming fundamentals, conditional logic and structured problem-solving as a foundation for engineering applications.</p><div class="chips"><span class="chip">Python</span><span class="chip">Programming</span></div></article>
+        <article class="card"><div class="number">FUTURE FOCUS</div><h3>AI, Machine Learning & Robotics</h3><p>Developing foundational knowledge with the goal of applying intelligent systems to automation and mechatronics projects.</p><div class="chips"><span class="chip">AI / ML</span><span class="chip">Robotics</span><span class="chip">Automation</span></div></article>
+      </div>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="section-tag">04 / Current direction</div><h2 class="section-title">Where I’m heading</h2>
+      <div class="learning">
+        <div class="card"><h3>My learning priorities</h3><ul><li>Improve Python programming and problem-solving</li><li>Build stronger CAD and engineering design ability</li><li>Understand electronics, sensors and control systems</li><li>Progress into AI, machine learning and robotics</li></ul></div>
+        <div class="card"><h3>Opportunities I’m open to</h3><ul><li>Entry-level engineering internships</li><li>Practical technical training and mentorship</li><li>Collaborative student engineering projects</li><li>Opportunities to learn while contributing to a team</li></ul></div>
+      </div>
+    </div></section>
+
+    <section id="contact"><div class="wrap">
+      <div class="section-tag">05 / Contact</div><h2 class="section-title">Let’s connect.</h2>
+      <div class="contact"><h3>Have an opportunity or a project in mind?</h3><p>I’m open to connecting with engineers, mentors, teams and organisations working on practical technology and engineering solutions.</p><div class="contact-links"><a href="mailto:YOUR_EMAIL@example.com">Email me</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></div><p><small>Replace the sample email and profile links with your actual contact details before publishing.</small></p></div>
+    </div></section>
+  </main>
+  <footer class="wrap"><span>© <span id="year"></span> Olaoluwa Shinaayo</span><span>Built with curiosity and a love for engineering.</span></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
