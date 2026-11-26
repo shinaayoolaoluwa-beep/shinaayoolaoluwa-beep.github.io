@@ -3,46 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Olaoluwa Shinaayo — 300 Level Mechatronics Engineering student at FUOYE, Python, Arduino and CAD.">
+<meta name="description" content="Olaoluwa Shinaayo — 300 Level Mechatronics Engineering student at FUOYE.">
 <title>Olaoluwa Shinaayo | Mechatronics Engineer</title>
-<link rel="icon" href="data:image/svg+xml,[STRIPPED]">
 <style>
-:root{--bg:#ffffff;--panel:#f5f5f5;--text:#000000;--muted:#555555;--accent:#000000;--line:#e5e5e5}
+:root{--bg:#ffffff;--panel:#f5f5f5;--text:#000;--muted:#555;--line:#e5e5e5}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+body{margin:0;background:#fff;color:#000;font:16px/1.65 Inter,system-ui,Arial,sans-serif}
 a{color:inherit;text-decoration:none}.container{width:min(1120px,90%);margin:auto}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
-.logo{font-weight:800;letter-spacing:.5px}.logo span{color:#000}
-.links{display:flex;gap:25px;color:#555;font-size:.94rem}.links a:hover,.social a:hover{color:#000;text-decoration:underline}
+.logo{font-weight:800}.links{display:flex;gap:25px;color:#555;font-size:.94rem}
 .hero{min-height:76vh;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:65px 0}
 .kicker{color:#000;font-size:.78rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;border:1px solid #000;display:inline-block;padding:6px 12px;border-radius:999px}
-.hero h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.06;letter-spacing:-2px;margin:18px 0}
-.hero h1 span{color:#000}.lead{max-width:620px;color:#555;font-size:1.1rem}
+.hero h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.06;margin:18px 0}
+.lead{max-width:620px;color:#555;font-size:1.1rem}
 .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
 .btn{display:inline-block;padding:12px 19px;border-radius:9px;font-weight:750;border:1px solid #000}
 .primary{background:#000;color:#fff}.secondary{color:#000;background:#fff}
-.portrait-wrap{justify-self:center;padding:10px;border:1px solid #ddd;border-radius:28px;background:#f5f5f5;box-shadow:0 15px 40px rgba(0,0,0,0.1);max-width:370px;width:100%}
-.portrait{display:block;width:100%;min-height:380px;aspect-ratio:4/5;object-fit:cover;object-position:center 28%;border-radius:20px;background:#ddd;filter:grayscale(100%)}
-.section{padding:76px 0;border-top:1px solid var(--line)}
-.section h2{font-size:2rem;margin:0 0 12px}.intro{color:#555;max-width:720px;margin:0 0 30px}
+.portrait-wrap{justify-self:center;padding:10px;border:1px solid #ddd;border-radius:28px;background:#f5f5f5;max-width:370px;width:100%}
+.portrait{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px;filter:grayscale(100%);background:#ddd}
+.section{padding:76px 0;border-top:1px solid #e5e5e5}.section h2{font-size:2rem;margin:0 0 12px}.intro{color:#555;max-width:720px;margin:0 0 30px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#f5f5f5;border:1px solid #e5e5e5;border-radius:15px;padding:23px}
-.card h3{margin:0 0 8px}.card p{margin:0;color:#555}
+.card{background:#f5f5f5;border:1px solid #e5e5e5;border-radius:15px;padding:23px}.card h3{margin:0 0 8px}.card p{margin:0;color:#555}
 .chips{display:flex;flex-wrap:wrap;gap:10px}.chip{padding:9px 14px;border:1px solid #ccc;border-radius:999px;background:#fff;color:#000}
-.project{min-height:175px}.project .tag{color:#000;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.project .tag{color:#000;font-size:.75rem;font-weight:800;text-transform:uppercase}
 .project-img{width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:14px;background:#e5e5e5;filter:grayscale(100%)}
-.project-links{margin-top:16px;display:flex;gap:12px}.mini-btn{font-size:.85rem;font-weight:700;color:#000;border:1px solid #000;padding:7px 12px;border-radius:7px}
-.contact{background:#f5f5f5;border:1px solid #ddd;border-radius:18px;padding:30px}
-.contact p{color:#555}.social{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;color:#000;font-weight:700}
+.project-links{margin-top:16px}.mini-btn{font-size:.85rem;font-weight:700;color:#000;border:1px solid #000;padding:7px 12px;border-radius:7px}
+.contact{background:#f5f5f5;border:1px solid #ddd;border-radius:18px;padding:30px}.contact p{color:#555}
+.social{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;color:#000;font-weight:700}
 input,textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #ccc;background:#fff;color:#000;margin-bottom:12px;font-family:inherit}
 .footer{padding:28px 0;color:#555;font-size:.88rem}
-@media(max-width:760px){.links{gap:12px;font-size:.82rem}.hero{grid-template-columns:1fr;gap:35px;padding:45px 0}.portrait-wrap{width:min(290px,80%);grid-row:1}.hero-copy{grid-row:2}.grid{grid-template-columns:1fr}.section{padding:55px 0}.nav{align-items:flex-start;gap:14px;flex-direction:column}}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:35px}.portrait-wrap{width:min(290px,80%);grid-row:1}.hero-copy{grid-row:2}.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <header class="container"><nav class="nav">
-<a class="logo" href="#home">OLAOLUWA<span>.</span></a>
+<a class="logo" href="#home">OLAOLUWA.</a>
 <div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
 </nav></header>
 
@@ -50,7 +46,7 @@ input,textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #ccc;b
 <section class="container hero" id="home">
 <div class="hero-copy">
 <div class="kicker">300 Level Mechatronics Engineering Student</div>
-<h1>Hi, I'm <span>Olaoluwa Shinaayo.</span></h1>
+<h1>Hi, I'm Olaoluwa Shinaayo.</h1>
 <p class="lead">I am a 300 Level Mechatronics Engineering student at the Federal University Oye-Ekiti, building practical skills across engineering design, programming, automation and intelligent systems.</p>
 <div class="actions">
 <a class="btn primary" href="#projects">Explore my work</a>
@@ -58,7 +54,12 @@ input,textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #ccc;b
 <a class="btn secondary" href="cv.pdf" download>Download CV</a>
 </div>
 </div>
-<div class="portrait-wrap"><img class="portrait" src="profile.jpg" alt="Olaoluwa Shinaayo" onerror="this.style.display='none'"></div>
+
+<!-- YOUR PHOTO HERE - CHATGPT METHOD -->
+<!-- Go to base64.guru, convert your photo, paste the code after base64, -->
+<div class="portrait-wrap">
+<img class="portrait" src="data:image/jpeg;base64,PASTE_YOUR_PHOTO_CODE_HERE" alt="Olaoluwa Shinaayo">
+</div>
 </section>
 
 <section class="container section" id="about">
@@ -80,19 +81,16 @@ input,textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #ccc;b
 <h2>Projects</h2><p class="intro">Real work, not just ideas.</p>
 <div class="grid">
 <div class="card project">
-<img class="project-img" src="relay-project.jpg" alt="Relay project" onerror="this.style.display='none'">
 <div class="tag">Arduino + Automation</div><h3>Relay Control System</h3>
-<p>Built an Arduino-based relay system to control home appliances automatically. Uses sensors and timed control.</p>
+<p>Built an Arduino-based relay system to control home appliances automatically.</p>
 <div class="project-links"><a class="mini-btn" href="https://github.com/shinaayoolaoluwa-beep">View Code →</a></div>
 </div>
 <div class="card project">
-<img class="project-img" src="cad-project.jpg" alt="CAD project" onerror="this.style.display='none'">
 <div class="tag">CAD Design</div><h3>Mechanical Part Design</h3>
-<p>Designed precision mechanical parts in AutoCAD / SolidWorks with proper dimensions for manufacturing.</p>
+<p>Designed precision mechanical parts in AutoCAD / SolidWorks.</p>
 <div class="project-links"><a class="mini-btn" href="https://github.com/shinaayoolaoluwa-beep">View Code →</a></div>
 </div>
 <div class="card project">
-<img class="project-img" src="python-project.jpg" alt="Python project" onerror="this.style.display='none'">
 <div class="tag">Python</div><h3>Python Automation Tool</h3>
 <p>Python script to automate repetitive tasks and process data faster.</p>
 <div class="project-links"><a class="mini-btn" href="https://github.com/shinaayoolaoluwa-beep">View Code →</a></div>
@@ -112,18 +110,24 @@ input,textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #ccc;b
 <section class="container section" id="contact">
 <div class="contact">
 <h2>Let's Work Together</h2>
-<p>Have a project, internship or collaboration? Message me.</p>
-<form action="https://formspree.io/f/YOUR_ID" method="POST">
+<p>Have a project, internship or collaboration? Message me. E go enter my email directly.</p>
+
+<!-- FREE FORM - FormSubmit, no account needed -->
+<form action="https://formsubmit.co/shinaayoolaoluwa@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://shinaayoolaoluwa-beep.github.io/#contact">
+<input type="hidden" name="_subject" value="New message from your portfolio!">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
 <button class="btn primary" type="submit" style="border:none;cursor:pointer">Send Message</button>
 </form>
+
 <div class="social">
 <a href="mailto:shinaayoolaoluwa@gmail.com">Email</a>
 <a href="https://www.linkedin.com/in/shinaayoolaoluwa" target="_blank">LinkedIn</a>
 <a href="https://github.com/shinaayoolaoluwa-beep" target="_blank">GitHub</a>
-<a href="https://wa.me/2347017644939" target="_blank">WhatsApp</a>
+<a href="https://wa.me/234XXXXXXXXXX" target="_blank">WhatsApp</a>
 </div>
 </div>
 </section>
